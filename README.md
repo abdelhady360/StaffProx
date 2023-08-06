@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p><BR>
 
-## Project Invoices  
+## Project StaffProx   
 
 _StaffProx_ An application that makes it easier for you to manage companies and employees in terms of following up on the expiry of residencies, work permits, and the expiry date of employee passports using Laravel 8.x ! 
 
