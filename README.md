@@ -1,70 +1,101 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<p  align="center"><a href="https://laravel.com" target="_blank"><img   src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+</p><BR>
 
-## About Laravel
+## Project Invoices  
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+_StaffProx_ An application that makes it easier for you to manage companies and employees in terms of following up on the expiry of residencies, work permits, and the expiry date of employee passports using Laravel 8.x ! 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Companies Management
+    1. Alert when the company's commercial license expires
+    2. Alert when the Federal Authority for Identity and Citizenship account has expired
+    3. Alerting the expiration date of the company's health insurance
+       
+### Staff Management
+    1. Alert when the employee's residence permit expires
+    2. Alert when the employee's work offer permit expires
+    3. Alert when the employee's passport expires
+    3. Also, all this is the same for the employee who only has his visa
+ 
+  ### Services Section (Typing Offices Transactions Section)
+     - Add services :
+        1. Government fees
+        2. office fees
+        3. Service description
+        4. Service implementation steps
+        5. Add notes
+        6. Required Documents
+    
+### Inquiries Section (Printing Office Transactions Section)
+          - Add query:
+              1. Service description
+              2. Steps to implement the service
+              3. Add notes
+              4. The required documents
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Frequently Asked Questions Section (Printing Office Transactions Section)
+           1. Add a question
+           2. Add an answer
+       
 
-## Laravel Sponsors
+##  Requirements
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
 
-## Contributing
+<pre><code>PHP >= 8.0.0
+OpenSSL PHP Extension
+PDO PHP Extension
+Mbstring PHP Extension
+Tokenizer PHP Extension
+XML PHP Extension
+Or
+XAMPP 8.X </code></pre>
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Install
 
-## Security Vulnerabilities
+Clone repo <br>
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+<pre><code>git clone https://github.com/abdelhady360/StaffProx.git</code></pre>
 
-## License
+Install Composer  <br><br>
+<a href="https://getcomposer.org/download/" target="_blank">Download Composer</a> <br>
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# MDDE-Office-UAE
-# StaffProx
-# StaffProx
-# StaffProx
-# StaffProx
-# StaffProx
+Composer update/install
+
+<pre><code>composer install</code></pre>
+
+Install Nodejs <br>
+
+<a href="https://nodejs.org/en/download/" target="_blank">Download Node.js</a> <br>
+
+NPM Install
+
+<pre><code>npm install</code></pre>
+
+## How to setting
+
+- Go into `.env` file and change Database and Email credentials.
+- Go to a file `database\seeds\UserSeeder.php` and set your own owner account
+<pre><code>php artisan migrate:refresh</code></pre>
+<pre><code>php artisan db:seed</code></pre>
+
+
+
+## Communication
+<BR>
+
+<p align="center"><a href="https://twitter.com/abdelhady360/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/ar/thumb/9/9f/Twitter_bird_logo_2012.svg/280px-Twitter_bird_logo_2012.svg.png" width="40"></a></p>
+
+
